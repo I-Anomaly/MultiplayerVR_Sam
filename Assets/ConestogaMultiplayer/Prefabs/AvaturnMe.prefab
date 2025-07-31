@@ -2918,7 +2918,8 @@ GameObject:
   - component: {fileID: 865635528948233771}
   - component: {fileID: 3190551486769281319}
   - component: {fileID: 7841486450601003797}
-  - component: {fileID: 2579527438535539438}
+  - component: {fileID: 3773739153064438940}
+  - component: {fileID: 6040241452277716574}
   m_Layer: 0
   m_Name: AvaturnMe
   m_TagString: Untagged
@@ -3007,7 +3008,7 @@ MonoBehaviour:
   rightArmIK_target: {fileID: 6283660033721488507}
   headBone: {fileID: 5442846880066850693}
   mouthAudio: {fileID: 0}
---- !u!114 &2579527438535539438
+--- !u!114 &3773739153064438940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3016,10 +3017,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 6403325052872256035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec9e6a256e6c5241b273eeb9426c4ab, type: 3}
+  m_Script: {fileID: 11500000, guid: c03d8ab75f34ce149b96a2bc873a7759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePort: 6000
+  blinkInterval: 3
+  blinkDuration: 0.1
+  headMesh: {fileID: 1625698318526127899}
+--- !u!114 &6040241452277716574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6403325052872256035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d6f5651bc57bc4ca5fe3f2909534bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newGazeTime: 3
+  leftEyeBone: {fileID: 3338178727096525444}
+  rightEyeBone: {fileID: 6415819511916957823}
+  enableRandomGazing: 1
 --- !u!1 &6466093862428882835
 GameObject:
   m_ObjectHideFlags: 0
